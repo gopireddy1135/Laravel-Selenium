@@ -31,10 +31,10 @@ pipeline {
                // sh "vendor/bin/phpunit"
                // sh "wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb"
                // sh "php artisan dusk:install"
-                  sh "composer require modelizer/selenium
+               // sh "composer require modelizer/selenium
                   sh "php artisan config:clear"
                   sh "php artisan selenium:start"
-                  sh "sudo apt-get install xvfb"
+               // sh "sudo apt-get install xvfb"
                   sh "phpunit vendor/bin/phpunit tests/SeleniumExampleTest.php"
                   sh "vendor/bin/steward run staging chrome"
                   sh "pwd"
