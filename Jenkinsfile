@@ -11,7 +11,7 @@ pipeline {
                 sh "chmod +x composer.phar"
                 sh "sudo mv composer.phar /usr/local/bin/composer"
                 sh "sudo apt install default-jre"
-                sh "sudo apt install default-jdk"
+                sh "sudo apt install default-jdk -y"
                 sh "java -version"
                 sh "composer -V"
                 sh "sudo apt install npm"
